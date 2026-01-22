@@ -38,3 +38,10 @@ form.addEventListener("submit", async (e) => {
 
   btn.disabled = false;
 });
+
+// Add click event listener to floating order icon to scroll to form
+const floatingIcon = document.querySelector('.floating-order-icon');
+floatingIcon.addEventListener('click', () => {
+  const formSection = document.querySelector('.form-section');
+  formSection.scrollIntoView({ behavior: 'smooth' });
+});
