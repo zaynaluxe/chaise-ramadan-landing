@@ -45,3 +45,9 @@ floatingIcon.addEventListener('click', () => {
   const formSection = document.querySelector('.form-section');
   formSection.scrollIntoView({ behavior: 'smooth' });
 });
+
+// Add click event listener to floating WhatsApp icon
+const whatsappIcon = document.querySelector('.floating-whatsapp-icon');
+whatsappIcon.addEventListener('click', () => {
+  window.open('https://wa.me/212671934735', '_blank');
+});
