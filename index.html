@@ -48,7 +48,12 @@ src="https://www.facebook.com/tr?id=689439414911420&ev=PageView&noscript=1"/>
         <!-- Order Form -->
         <section class="form-section">
             <h2>اطلب الآن - عرض رمضان الخاص</h2>
-            <div class="success-message" id="successMessage">✓ تم إرسال طلبك بنجاح! سنتصل بك قريبا لتأكيد الطلب</div>
+            <div class="success-modal" id="successMessage" style="display: none;">
+                <button class="close-btn" onclick="document.getElementById('successMessage').style.display='none'">×</button>
+                <div class="message-content">
+                    ✓ تم إرسال طلبك بنجاح! سنتصل بك قريبا لتأكيد الطلب
+                </div>
+            </div>
             <div class="error-message" id="errorMessage">حدث خطأ في إرسال الطلب. الرجاء المحاولة مرة أخرى</div>
             <form id="contactForm">
                 <div class="form-group"><label for="name">الاسم الكامل *</label><input type="text" id="name" name="name" required placeholder="أدخل اسمك الكامل"></div>
