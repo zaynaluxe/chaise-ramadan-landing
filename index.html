@@ -5,6 +5,24 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>الكرسي المحمول القابل للطي - راحة وكرامة في رمضان</title>
     <link rel="stylesheet" href="styles.css">
+<!-- Meta Pixel Code -->
+<script>
+!function(f,b,e,v,n,t,s)
+{if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+n.queue=[];t=b.createElement(e);t.async=!0;
+t.src=v;s=b.getElementsByTagName(e)[0];
+s.parentNode.insertBefore(t,s)}(window, document,'script',
+'https://connect.facebook.net/en_US/fbevents.js');
+fbq('init', '689439414911420');
+fbq('track', 'PageView');
+</script>
+<noscript>
+<img height="1" width="1" style="display:none"
+src="https://www.facebook.com/tr?id=689439414911420&ev=PageView&noscript=1"/>
+</noscript>
+<!-- End Meta Pixel Code -->
 </head>
 <body>
     <!-- Ramadan Banner -->
@@ -43,7 +61,7 @@
                         <option value="3">3 كراسي - 450 درهم (وفر 150 درهم)</option>
                     </select>
                 </div>
-                <button type="submit" class="submit-btn" id="submitBtn">اطلب الآن - الدفع عند الاستلام 🛒</button>
+                <button type="submit" class="submit-btn" id="submitBtn" onclick="fbq('track','Purchase',{value:1,currency:'MAD'})">اطلب الآن - الدفع عند الاستلام 🛒</button>
             </form>
         </section>
 
@@ -91,11 +109,19 @@
             <div class="feature-card"><div class="feature-icon">🌙</div><h3>مثالي لرمضان</h3><p>راحة في صلاة التراويح والقيام طوال الشهر الكريم</p></div>
         </section>
 
+        <!-- Testimonials -->
+        <section class="testimonials">
+            <h2>ماذا يقول عملاؤنا</h2>
+            <div class="testimonial-card"><img src="61aBmDytlCL.jpg" alt="صورة العميل" class="testimonial-image"><div class="stars">⭐⭐⭐⭐⭐</div><p>"منتوج زوين بزاف! الوالد ديالي كايستعملو كل نهار والحمد لله ارتاح فيه بزاف، خصوصاً فاش كيمشي يصلي فالمسجد كيديه معاه, الله يجازيكم بخير"</p><strong>- محمد من الدار البيضاء</strong></div>
+            <div class="testimonial-card"><img src="71CMga4YqFL.jpg" alt="صورة العميل" class="testimonial-image"><div class="stars">⭐⭐⭐⭐⭐</div><p>"الكرسي خفيف وعملي بزاف الوالدة ديالي كتديه معاها فينما مشات وعجبها حيت متقيلش  وكيتجمع والتوصيل كان سريع. شكراً ليكم"</p><strong>- فاطمة من الرباط</strong></div>
+            <div class="testimonial-card"><img src="71uokXLgZ1L.jpg" alt="صورة العميل" class="testimonial-image"><div class="stars">⭐⭐⭐⭐⭐</div><p>"جودة ممتازة والثمن معقول شريت جوج، واحد لبا وواحد لعمي، بجوجهم عجبهم بزاف"</p><strong>- عبد الله من مراكش</strong></div>
+        </section>
+
         <!-- Product Gallery -->
         <section class="gallery-section">
             <h2>صور المنتج</h2>
             <div class="gallery">
-                <img src="باك-كبار-السن-كرسي-والعكاز-03.jpg" alt="صورة إضافية للكرسي" class="gallery-image">
+                <img src="WhatsApp Image 2026-01-27 at 12.29.17.jpeg" alt="صورة إضافية للكرسي" class="gallery-image">
                 <!-- Bandeau titre -->
                 <div class="top-banner">
                     <span class="arrow">⬇</span>
@@ -120,14 +146,6 @@
             <div class="benefit-item"><span>مناسب للاستخدام في البيت، المسجد، الحديقة، والرحلات</span></div>
             <div class="benefit-item"><span>توصيل سريع لجميع أنحاء المغرب</span></div>
             <div class="benefit-item"><span>ضمان الجودة وإمكانية الاستبدال</span></div>
-        </section>
-
-        <!-- Testimonials -->
-        <section class="testimonials">
-            <h2>ماذا يقول عملاؤنا</h2>
-            <div class="testimonial-card"><img src="61aBmDytlCL.jpg" alt="صورة العميل" class="testimonial-image"><div class="stars">⭐⭐⭐⭐⭐</div><p>"منتوج زوين بزاف! الوالد ديالي كايستعملو كل نهار والحمد لله ارتاح فيه بزاف، خصوصاً فاش كيمشي يصلي فالمسجد كيديه معاه, الله يجازيكم بخير"</p><strong>- محمد من الدار البيضاء</strong></div>
-            <div class="testimonial-card"><img src="71CMga4YqFL.jpg" alt="صورة العميل" class="testimonial-image"><div class="stars">⭐⭐⭐⭐⭐</div><p>"الكرسي خفيف وعملي بزاف الوالدة ديالي كتديه معاها فينما مشات وعجبها حيت متقيلش  وكيتجمع والتوصيل كان سريع. شكراً ليكم"</p><strong>- فاطمة من الرباط</strong></div>
-            <div class="testimonial-card"><img src="71uokXLgZ1L.jpg" alt="صورة العميل" class="testimonial-image"><div class="stars">⭐⭐⭐⭐⭐</div><p>"جودة ممتازة والثمن معقول شريت جوج، واحد لبا وواحد لعمي، بجوجهم عجبهم بزاف"</p><strong>- عبد الله من مراكش</strong></div>
         </section>
 
     </div>
