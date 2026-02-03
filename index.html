@@ -15,12 +15,20 @@ n.queue=[];t=b.createElement(e);t.async=!0;
 t.src=v;s=b.getElementsByTagName(e)[0];
 s.parentNode.insertBefore(t,s)}(window, document,'script',
 'https://connect.facebook.net/en_US/fbevents.js');
-fbq('init', '895493796496920');
+fbq('init', '1796284628442633');
 fbq('track', 'PageView');
+
+// Track ViewContent when page loads
+fbq('track', 'ViewContent', {
+  content_name: 'Chaise Pliable Ramadan',
+  content_category: 'Furniture',
+  value: 199,
+  currency: 'MAD'
+});
 </script>
 <noscript>
 <img height="1" width="1" style="display:none"
-src="https://www.facebook.com/tr?id=895493796496920&ev=PageView&noscript=1"/>
+src="https://www.facebook.com/tr?id=1796284628442633&ev=PageView&noscript=1"/>
 </noscript>
 <!-- End Meta Pixel Code -->
 </head>
@@ -65,7 +73,7 @@ src="https://www.facebook.com/tr?id=895493796496920&ev=PageView&noscript=1"/>
                         <option value="3">3 كراسي - 450 درهم (وفر 150 درهم)</option>
                     </select>
                 </div>
-                <button type="submit" class="submit-btn" id="submitBtn" onclick="fbq('track','Purchase',{value:1,currency:'MAD'})">اطلب الآن - الدفع عند الاستلام 🛒</button>
+                <button type="submit" class="submit-btn" id="submitBtn">اطلب الآن - الدفع عند الاستلام 🛒</button>
             </form>
         </section>
 
