@@ -83,4 +83,8 @@ async function processImages() {
   console.log('\n✅ COMPRESSION TERMINÉE !\n');
 }
 
+// Redimensionner l'image spécifique d'abord
+await resizeSpecificImage();
+
+// Puis traiter les autres images
 processImages();
