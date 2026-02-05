@@ -2,7 +2,7 @@
   "name": "landing-page-chaise-ramadan",
   "version": "1.0.0",
   "type": "module",
-  "description": "Landing page pour vente de chaises pliables avec intégration Google Sheets",
+  "description": "Landing page pour vente de chaises pliables avec intégration Google Sheets - OPTIMISÉE",
   "main": "server.js",
   "scripts": {
     "start": "node server.js",
@@ -12,12 +12,15 @@
   "keywords": [
     "landing-page",
     "google-sheets",
-    "ecommerce"
+    "ecommerce",
+    "optimized",
+    "performance"
   ],
   "author": "",
   "license": "ISC",
   "dependencies": {
     "body-parser": "^1.20.4",
+    "compression": "^1.7.4",
     "cors": "^2.8.5",
     "dotenv": "^16.6.1",
     "express": "^4.22.1",

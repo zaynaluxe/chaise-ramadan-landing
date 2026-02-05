@@ -3,9 +3,18 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="الكرسي المحمول القابل للطي - راحة وكرامة في رمضان. توصيل مجاني لجميع المدن المغربية">
     <title>الكرسي المحمول القابل للطي - راحة وكرامة في رمضان</title>
+    
+    <!-- Preload Critical CSS -->
+    <link rel="preload" href="styles.css" as="style">
     <link rel="stylesheet" href="styles.css">
-<!-- Meta Pixel Code -->
+    
+    <!-- Preconnect to external domains -->
+    <link rel="preconnect" href="https://connect.facebook.net">
+    <link rel="dns-prefetch" href="https://connect.facebook.net">
+    
+<!-- Meta Pixel Code - Optimized with async -->
 <script>
 !function(f,b,e,v,n,t,s)
 {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
@@ -38,7 +47,12 @@ src="https://www.facebook.com/tr?id=1796284628442633&ev=PageView&noscript=1"/>
 
     <!-- Header -->
     <header class="header">
-        <img src="WhatsApp Image 2026-01-28 at 15.04.18.webp" alt="New Image" class="header-image">
+        <img src="WhatsApp Image 2026-01-28 at 15.04.18.webp" 
+             alt="الكرسي المحمول القابل للطي لرمضان" 
+             class="header-image"
+             width="1200" 
+             height="630"
+             fetchpriority="high">
     </header>
 
     <div class="container">
@@ -86,7 +100,7 @@ src="https://www.facebook.com/tr?id=1796284628442633&ev=PageView&noscript=1"/>
 
             <div class="warning-content">
                 <p class="warning-text">
-                    إحذروا من تقليد هذا الكرسي الذي يباع بأسعار أقل عبر الإنترنت. كرسينا يحتوي على 3 مشابك تثبيت على كل شريط عوض مشبك ثبيت واحد كما هو واضح على الصورة الحقيقية، مما يجعله شديد التحمل وقادرًا على تحمل وزن يصل إلى 150 كغ بكل سهولة، على عكس الكراسي المقلدة التي تحتوي على مشبك تثبيت واحد فقط وتتعرض للكسر بسهولة تحت الوزن.
+                    إحذروا من تقليد هذا الكرسي الذي يباع بأسعار أقل عبر الإنترنت. كرسينا يحتوي على 3 مشابك تثبيت على كل شريط عوض مشبك ثبيت واحد كما هو واضح على الصورة الحقيقية، مما يجعله شديد التحمل وقادرًا على تحمل وزن يصل إلى 150 كج بكل سهولة، على عكس الكراسي المقلدة التي تحتوي على مشبك تثبيت واحد فقط وتتعرض للكسر بسهولة تحت الوزن.
                 </p>
             </div>
         </div>
@@ -102,13 +116,17 @@ src="https://www.facebook.com/tr?id=1796284628442633&ev=PageView&noscript=1"/>
 
           <!-- Description -->
           <div class="product-description">
-            يتحمل وزن يصل إلى <span class="highlight">150 كغ</span> بفضل توفره على<br>
+            يتحمل وزن يصل إلى <span class="highlight">150 كج</span> بفضل توفره على<br>
             3 مشابك تثبيت متينة على كل شريط
           </div>
 
           <!-- Image produit -->
           <div class="product-image">
-            <img src="WhatsApp Image 2026-01-26 at 20.43.28.webp" alt="Chaise télescopique">
+            <img src="WhatsApp Image 2026-01-26 at 20.43.28.webp" 
+                 alt="الكرسي القابل للطي - صورة حقيقية" 
+                 width="600" 
+                 height="800"
+                 loading="lazy">
           </div>
 
         </div>
@@ -124,29 +142,82 @@ src="https://www.facebook.com/tr?id=1796284628442633&ev=PageView&noscript=1"/>
         <!-- Testimonials -->
         <section class="testimonials">
             <h2>ماذا يقول عملاؤنا</h2>
-            <div class="testimonial-card"><img src="61aBmDytlCL.webp" alt="صورة العميل" class="testimonial-image"><div class="stars">⭐⭐⭐⭐⭐</div><p>"منتوج زوين بزاف! الوالد ديالي كايستعملو كل نهار والحمد لله ارتاح فيه بزاف، خصوصاً فاش كيمشي يصلي فالمسجد كيديه معاه, الله يجازيكم بخير"</p><strong>- محمد من الدار البيضاء</strong></div>
-            <div class="testimonial-card"><img src="71CMga4YqFL.webp" alt="صورة العميل" class="testimonial-image"><div class="stars">⭐⭐⭐⭐⭐</div><p>"الكرسي خفيف وعملي بزاف الوالدة ديالي كتديه معاها فينما مشات وعجبها حيت متقيلش  وكيتجمع والتوصيل كان سريع. شكراً ليكم"</p><strong>- فاطمة من الرباط</strong></div>
-            <div class="testimonial-card"><img src="71uokXLgZ1L.webp" alt="صورة العميل" class="testimonial-image"><div class="stars">⭐⭐⭐⭐⭐</div><p>"جودة ممتازة والثمن معقول شريت جوج، واحد لبا وواحد لعمي، بجوجهم عجبهم بزاف"</p><strong>- عبد الله من مراكش</strong></div>
+            <div class="testimonial-card">
+                <img src="61aBmDytlCL.webp" 
+                     alt="صورة العميل" 
+                     class="testimonial-image"
+                     width="120" 
+                     height="120"
+                     loading="lazy">
+                <div class="stars">⭐⭐⭐⭐⭐</div>
+                <p>"منتوج زوين بزاف! الوالد ديالي كايستعملو كل نهار والحمد لله ارتاح فيه بزاف، خصوصاً فاش كيمشي يصلي فالمسجد كيديه معاه, الله يجازيكم بخير"</p>
+                <strong>- محمد من الدار البيضاء</strong>
+            </div>
+            <div class="testimonial-card">
+                <img src="71CMga4YqFL.webp" 
+                     alt="صورة العميل" 
+                     class="testimonial-image"
+                     width="120" 
+                     height="120"
+                     loading="lazy">
+                <div class="stars">⭐⭐⭐⭐⭐</div>
+                <p>"الكرسي خفيف وعملي بزاف الوالدة ديالي كتديه معاها فينما مشات وعجبها حيت متقيلش  وكيتجمع والتوصيل كان سريع. شكراً ليكم"</p>
+                <strong>- فاطمة من الرباط</strong>
+            </div>
+            <div class="testimonial-card">
+                <img src="71uokXLgZ1L.webp" 
+                     alt="صورة العميل" 
+                     class="testimonial-image"
+                     width="120" 
+                     height="120"
+                     loading="lazy">
+                <div class="stars">⭐⭐⭐⭐⭐</div>
+                <p>"جودة ممتازة والثمن معقول شريت جوج، واحد لبا وواحد لعمي، بجوجهم عجبهم بزاف"</p>
+                <strong>- عبد الله من مراكش</strong>
+            </div>
         </section>
 
         <!-- Product Gallery -->
         <section class="gallery-section">
             <h2>صور المنتج</h2>
             <div class="gallery">
-                <img src="WhatsApp Image 2026-01-27 at 12.29.17.webp" alt="صورة إضافية للكرسي" class="gallery-image">
-                <!-- Bandeau titre -->
+                <img src="WhatsApp Image 2026-01-27 at 12.29.17.webp" 
+                     alt="صورة إضافية للكرسي" 
+                     class="gallery-image"
+                     width="600" 
+                     height="800"
+                     loading="lazy">
+                
                 <div class="top-banner">
                     <span class="arrow">⬇</span>
                     <span class="banner-text">مقعد مريح للصلاة – تصميم عملي وخفيف الوزن</span>
                 </div>
-                <img src="Whisk_f089e36950b2a6db5cf419e9a8c0c2fedr.webp" alt="صورة إضافية للكرسي" class="gallery-image">
-                <!-- Bandeau titre -->
+                
+                <img src="Whisk_f089e36950b2a6db5cf419e9a8c0c2fedr.webp" 
+                     alt="صورة إضافية للكرسي" 
+                     class="gallery-image"
+                     width="600" 
+                     height="800"
+                     loading="lazy">
+                
                 <div class="top-banner">
                     <span class="arrow">⬇</span>
                     <span class="banner-text">سهل الطي والفتح : يمكن فتحه بسهولة عن طريق سحب الأطراف</span>
                 </div>
-                <img src="Screenshot 2026-01-15 210308.webp" alt="صورة إضافية للكرسي" class="gallery-image">
-                <img src="Whisk_7dcef88aec8ac6d9ab64ff1189e7c3a4dr.webp" alt="صورة إضافية للكرسي" class="gallery-image">
+                
+                <img src="Screenshot 2026-01-15 210308.webp" 
+                     alt="صورة إضافية للكرسي" 
+                     class="gallery-image"
+                     width="800" 
+                     height="800"
+                     loading="lazy">
+                
+                <img src="Whisk_7dcef88aec8ac6d9ab64ff1189e7c3a4dr.webp" 
+                     alt="صورة إضافية للكرسي" 
+                     class="gallery-image"
+                     width="600" 
+                     height="800"
+                     loading="lazy">
             </div>
         </section>
 
@@ -172,8 +243,15 @@ src="https://www.facebook.com/tr?id=1796284628442633&ev=PageView&noscript=1"/>
     <div class="floating-order-icon">اطلب الآن 🛒</div>
 
     <!-- Floating WhatsApp Icon -->
-    <div class="floating-whatsapp-icon"><img src="https://img.icons8.com/color/48/whatsapp.png" alt="WhatsApp"></div>
+    <div class="floating-whatsapp-icon">
+        <img src="https://img.icons8.com/color/48/whatsapp.png" 
+             alt="WhatsApp" 
+             width="48" 
+             height="48"
+             loading="lazy">
+    </div>
 
-    <script src="script.js"></script>
+    <!-- Script with defer for better performance -->
+    <script src="script.js" defer></script>
 </body>
 </html>

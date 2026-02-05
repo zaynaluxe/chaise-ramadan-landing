@@ -3,14 +3,48 @@ import bodyParser from "body-parser";
 import { google } from "googleapis";
 import cors from "cors";
 import dotenv from "dotenv";
+import compression from "compression";
 
 // Charger les variables d'environnement
 dotenv.config();
 
 const app = express();
+
+// ✅ COMPRESSION GZIP - Réduit la taille des fichiers de 70-90%
+app.use(compression({
+  level: 6, // Niveau de compression (0-9, 6 est optimal)
+  threshold: 0, // Compresse tout (même les petits fichiers)
+  filter: (req, res) => {
+    if (req.headers['x-no-compression']) {
+      return false;
+    }
+    return compression.filter(req, res);
+  }
+}));
+
 app.use(cors());
 app.use(bodyParser.json());
-app.use(express.static("."));
+
+// ✅ STATIC FILES avec headers de cache optimisés
+app.use(express.static(".", {
+  maxAge: '1y', // Cache les assets statiques pendant 1 an
+  etag: true,
+  lastModified: true,
+  setHeaders: (res, path) => {
+    // Cache agressif pour les images
+    if (path.endsWith('.webp') || path.endsWith('.jpg') || path.endsWith('.png')) {
+      res.setHeader('Cache-Control', 'public, max-age=31536000, immutable');
+    }
+    // Cache moyen pour CSS/JS
+    if (path.endsWith('.css') || path.endsWith('.js')) {
+      res.setHeader('Cache-Control', 'public, max-age=604800');
+    }
+    // Pas de cache pour HTML
+    if (path.endsWith('.html')) {
+      res.setHeader('Cache-Control', 'no-cache, must-revalidate');
+    }
+  }
+}));
 
 // Configuration Google Auth
 let auth;
@@ -53,7 +87,8 @@ app.get("/health", (req, res) => {
   res.json({ 
     status: "ok", 
     timestamp: new Date().toISOString(),
-    environment: process.env.NODE_ENV || "development"
+    environment: process.env.NODE_ENV || "development",
+    compression: "enabled"
   });
 });
 
@@ -149,7 +184,9 @@ const PORT = process.env.PORT || 4000;
 
 app.listen(PORT, () => {
   console.log(`🚀 Serveur démarré sur le port ${PORT}`);
-  console.log(`📍 URL locale: http://localhost:${PORT}`);
+  console.log(`🔗 URL locale: http://localhost:${PORT}`);
   console.log(`📊 Google Sheets ID: ${spreadsheetId}`);
+  console.log(`🗜️  Compression Gzip: ACTIVÉE`);
+  console.log(`📦 Cache Headers: CONFIGURÉS`);
   console.log(`🔧 Mode: ${process.env.NODE_ENV || "development"}`);
 });
